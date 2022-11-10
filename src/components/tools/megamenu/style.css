@@ -1,0 +1,257 @@
+.mega_menu-wrapper {
+	width: 100%;
+}
+
+.mega_menu {
+	width: 100%;
+	height: 60px;
+	z-index: 100;
+	color: #B6A371;
+}
+
+.mega_menu ul {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	position: relative;
+}
+
+.mega_menu ul li {
+	display: inline-block;
+	margin: 5px;
+	padding: 5px;
+}
+
+.mega_menu ul li a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: capitalize;
+	font-weight: bold;
+	letter-spacing: 5px;
+	font-size: 12px;
+	display: block;
+}
+
+.wrapper .banner_img img {
+	width: 100%;
+	height: 500px;
+}
+
+.mega_menu ul li .sub_menu {
+	position: absolute;
+	width: max-content;
+	max-width: 450px;
+	height: max-content;
+	max-height: 400px;
+	background: #111;
+	background: linear-gradient(#1b1b1b, #111);
+	border: 1px solid #000;
+	border-radius: 5px;
+	box-shadow: inset 0 0 0 1px #272727;
+	padding: 25px 15px;
+	display: flex;
+	justify-content: space-around;
+	visibility: hidden;
+	line-height: 24px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	z-index: 10;
+}
+
+.mega_menu input {
+	background: #222;
+	background: linear-gradient(#333, #222);
+	border: 1px solid #444;
+	border-radius: 5px 0 0 5px;
+	box-shadow: 0 2px 0 #000;
+	color: #888;
+	display: block;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	height: 40px;
+	margin: 0;
+	padding: 0 10px;
+	text-shadow: 0 -1px 0 #000;
+	width: 200px;
+}
+
+input:focus {
+	animation: glow 800ms ease-out infinite alternate;
+	background: #222922;
+	background: linear-gradient(#333933, #222922);
+	border-color: #EFC862;
+	box-shadow: 0 0 5px #B7A472, inset 0 0 5px rgba(0, 255, 0, .1), 0 2px 0 #000;
+	color: #efe;
+	outline: none;
+}
+
+.mega_menu button {
+	background: #222;
+	background: linear-gradient(#333, #222);
+	border: 1px solid #444;
+	border-radius: 5px 0 0 5px;
+	box-shadow: 0 2px 0 #000;
+	color: #888;
+	display: block;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	height: 40px;
+	margin: 0;
+	padding: 0 10px;
+	text-shadow: 0 -1px 0 #000;
+	width: 100px;
+}
+
+.mega_menu button:hover {
+	color: #B7A472;
+}
+
+.mega_menu select:hover {
+	color: #B7A472;
+}
+
+.mega_menu select {
+	background: #222;
+	background: linear-gradient(#333, #222);
+	border: 1px solid #444;
+	border-radius: 5px 0 0 5px;
+	box-shadow: 0 2px 0 #000;
+	color: #888;
+	display: block;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	height: 40px;
+	margin: 0;
+	padding: 0 10px;
+	text-shadow: 0 -1px 0 #000;
+	width: 90px;
+}
+
+.mega_menu ul li:hover span {
+	cursor: pointer;
+	color: #f2f2f2;
+}
+
+.mega_menu ul li h3 {
+	font-weight: 300;
+}
+
+.mega_menu ul li:hover .sub_menu {
+	visibility: visible;
+}
+
+.mega_menu ul li:hover .sub_menu #filter-panel {
+	visibility: visible;
+	left: 200px;
+}
+
+.mega_menu ul li:hover .sub_menu #time-frame {
+	visibility: visible;
+	left: 100px;
+}
+
+.mega_menu ul li .sub_menu .col img {
+	width: 250px;
+	height: 180px;
+	display: block;
+}
+
+.mega_menu ul li .sub_menu p {
+	color: #fff;
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+.mega_menu ul li .sub_menu h4 {
+	color: #fbf9f7;
+}
+
+/* -------------------- */
+.filter-parent {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+.div1 {
+	grid-area: 1 / 1 / 2 / 5;
+}
+
+.div2 {
+	grid-area: 2 / 1 / 3 / 2;
+}
+
+.div3 {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.div4 {
+	grid-area: 2 / 3 / 3 / 5;
+}
+
+.div5 {
+	grid-area: 3 / 1 / 4 / 5;
+}
+
+.div6 {
+	grid-area: 2 / 4 / 3 / 5;
+}
+
+.div7 {
+	grid-area: 4 / 1 / 5 / 5;
+}
+
+.inner-parent {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+.inner-div1 {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.inner-div2 {
+	grid-area: 1 / 2 / 2 / 3;
+}
+
+/* chips area */
+
+.chips .chip {
+	display: inline-block;
+	width: auto;
+
+	background-color: #0077b5;
+	color: #fff;
+	border-radius: 3px;
+	margin: 2px;
+	overflow: hidden;
+}
+
+.chips .chip {
+	float: left;
+}
+
+.chips .chip .chip--button {
+	padding: 8px;
+	cursor: pointer;
+	background-color: #004471;
+	display: inline-block;
+}
+
+.chips .chip .chip--text {
+	padding: 8px;
+	cursor: no;
+	display: inline-block;
+	pointer-events: none
+}

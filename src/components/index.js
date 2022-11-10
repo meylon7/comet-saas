@@ -1,0 +1,6 @@
+export { AgentsManagment } from './AgentsManagment'
+export { EventsManagment } from './EventsManagment'
+export { LPR } from './LPR'
+export { FaceRecognition } from './FaceRecognition'
+export { ListManagement } from './ListManagement'
+export { Users } from './Users'
