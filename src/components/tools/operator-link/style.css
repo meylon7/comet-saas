@@ -1,25 +1,26 @@
-@font-face {
-    font-family: "Arial-Regular";
-    font-style: normal;
-    font-weight: 400;
-    src: url("https://fonts.animaapp.com/Arial-Regular") format("truetype");
-}
 
 .left-content {
     align-items: center;
     border: 1px none;
+    background-color: #373739;
+    border-radius: 3px;
+    margin-bottom: 20px;
     display: flex;
     gap: 16px;
     height: 62px;
     padding: 13px 0px 13px 15px;
     width: 395px;
+    color:#f2f2f2;
+    font-size: 13px;
 }
 
 .chevron-right {
     height: 24px;
     min-width: 24px;
 }
-
+.link-inv{
+    color:#f2f2f2
+}
 .investigating-link {
     align-items: flex-start;
     border: 1px none;

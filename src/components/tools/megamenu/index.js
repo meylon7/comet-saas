@@ -74,35 +74,35 @@ const MegaMenu = () => {
                     </li>
                     <li><a href="#">&#9776; Filter:</a>
                         <div className="sub_menu" id="filter-panel">
-                            <div class="filter-parent">
-                                <div class="div01"><h3>Quick Filter</h3> </div>
-                                <div class="div02"> </div>
-                                <div class="div03"> </div>
-                                <div class="div04"> <hr size="1px" />Switch to advanced filters</div>
-                                <div class="div05" className="btn">1000</div>
-                                <div class="div06" className="btn"> 2000</div>
-                                <div class="div07" className="btn"> 3000</div>
-                                <div class="div08" className="btn"> 4000</div>
-                                <div class="div09" className="btn"> 5000</div>
-                                <div class="div010" className="btn"> Appolo</div>
-                                <div class="div011" className="btn"> Proffesor</div>
-                                <div class="div012" className="btn"> Apachi</div>
-                                <div class="div013" className="btn"> Pagasus</div>
-                                <div class="div014" className="btn"> Comet</div>
-                                <div class="div015" className="btn"> Yellow</div>
-                                <div class="div016" className="btn"> White</div>
-                                <div class="div017" className="btn"> Black</div>
-                                <div class="div018" className="btn"> Gray</div>
-                                <div class="div019" className="btn"> Green</div>
-                                <div class="div020" className="btn"> &#8249;10</div>
-                                <div class="div021" className="btn"> &#8250;50</div>
-                                <div class="div022" className="btn"> &#8250;100</div>
-                                <div class="div023" className="btn"> &#8249;100</div>
-                                <div class="div024" className="btn"> &#8250;500</div>
-                                <div class="div025" className="btn"> </div>
-                                <div class="div026" className="btn"> </div>
-                                <div class="div027" className="btn"> </div>
-                                <div class="div028" className="btn"> </div>
+                            <div className="filter-parent">
+                                <div className="div01"><h3>Quick Filter</h3> </div>
+                                <div className="div02"> </div>
+                                <div className="div03"> </div>
+                                <div className="div04"> <hr size="1px" />Switch to advanced filters</div>
+                                <div className="div05" className="btn">1000</div>
+                                <div className="div06" className="btn"> 2000</div>
+                                <div className="div07" className="btn"> 3000</div>
+                                <div className="div08" className="btn"> 4000</div>
+                                <div className="div09" className="btn"> 5000</div>
+                                <div className="div010" className="btn"> Appolo</div>
+                                <div className="div011" className="btn"> Proffesor</div>
+                                <div className="div012" className="btn"> Apachi</div>
+                                <div className="div013" className="btn"> Pagasus</div>
+                                <div className="div014" className="btn"> Comet</div>
+                                <div className="div015" className="btn"> Yellow</div>
+                                <div className="div016" className="btn"> White</div>
+                                <div className="div017" className="btn"> Black</div>
+                                <div className="div018" className="btn"> Gray</div>
+                                <div className="div019" className="btn"> Green</div>
+                                <div className="div020" className="btn"> &#8249;10</div>
+                                <div className="div021" className="btn"> &#8250;50</div>
+                                <div className="div022" className="btn"> &#8250;100</div>
+                                <div className="div023" className="btn"> &#8249;100</div>
+                                <div className="div024" className="btn"> &#8250;500</div>
+                                <div className="div025" className="btn"> </div>
+                                <div className="div026" className="btn"> </div>
+                                <div className="div027" className="btn"> </div>
+                                <div className="div028" className="btn"> </div>
                             </div>
                         </div>
                     </li>

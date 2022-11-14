@@ -1,0 +1,76 @@
+
+ .tab-container {
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    top: 3%;
+    box-shadow: 0 0 100px rgba(173, 173, 173, 0.5);
+    border-radius: 3px;
+    overflow: hidden;
+}
+ .tab-container input {
+    display: none;
+}
+ .tab-container input:checked + label {
+    color: #EFC862;
+}
+ .tab-container input#tab1:checked ~ .line {
+    left: 0%;
+}
+ .tab-container input#tab1:checked ~ .content-tab-container #c1 {
+    opacity: 1;
+}
+ .tab-container input#tab2:checked ~ .line {
+    left: 25%;
+}
+ .tab-container input#tab2:checked ~ .content-tab-container #c2 {
+    opacity: 1;
+}
+ .tab-container input#tab3:checked ~ .line {
+    left: 50%;
+}
+ .tab-container input#tab3:checked ~ .content-tab-container #c3 {
+    opacity: 1;
+}
+ .tab-container input#tab4:checked ~ .line {
+    left: 75%;
+}
+ .tab-container input#tab4:checked ~ .content-tab-container #c4 {
+    opacity: 1;
+}
+ .tab-container label {
+    display: inline-block;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    width: 25%;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    transition: 0.25s background ease;
+    cursor: pointer;
+}
+ .tab-container label::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    transition: 0.25s ease;
+}
+ .tab-container label:hover::after {
+    opacity: 1;
+}
+ .tab-container .line {
+    position: absolute;
+    background:#EFC862;
+    height: 2px;
+    width: 25%;
+    top: 46px;
+    left: 0;
+    transition: 0.25s ease;
+}
+ 

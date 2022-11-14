@@ -1,21 +1,25 @@
 import React from "react";
 import './style.css'
-
-export default function TableRow(props) {
-    const { dateof, description, count, eventname, subname } = props;
+import Mail from './images/Mail.svg'
+import UserPhoto from './images/user-photo.svg'
+import Messenger from './images/Messenger.svg'
+import Telegram from './images/Telegram.svg'
+import VideoLink from './images/VideoLink.svg'
+import Clock from './images/Clock.svg'
+export function TableRow(props) {
+    const { dateof, description, count, eventname, subname, alert } = props;
     //6h 30min Feb 18, 2022
     //It is a long established fact that a reader will be distracted by the <br /> readable content of a page when looking at its layout. ...
     return (
         <div className="event-frame">
-            <div className="overlap-group">
                 <div className="overlap-group1roboto-normal-bon-jour-13px">
-                    <div className="container-l-color"></div>
+                    <div className="container-l-color" style={{borderLeft:`3px solid ${alert}`}}></div>
                     <div className="indicator"></div>
                     <div className="trailing-icon"></div>
-                    <img className="user-photo" src="./images/user-photo.svg" alt="user-photo" />
-                    <img className="mail" src="./images/Mail.svg" alt="Mail" />
-                    <img className="messenger" src="./images/Messenger.svg" alt="Messenger" />
-                    <img className="telegram" src="./images/Telegram.svg" alt="Telegram" />
+                    <img className="user-photo" src={UserPhoto} alt="user-photo" />
+                    <img className="mail" src={Mail} alt="Mail" />
+                    <img className="messenger" src={Messenger} alt="Messenger" />
+                    <img className="telegram" src={Telegram} alt="Telegram" />
                     <div className="user-details">
                         <div className="event-name">
                             {eventname}
@@ -25,20 +29,16 @@ export default function TableRow(props) {
                         </div>
                     </div>
                     <div className="time-text">
-                        {dateof}
+                    <img className="clock" src={Clock} alt="clock" /> &nbsp;&nbsp;<span>{dateof}</span>
                     </div>
                     <p className="event-description">
                         {description}
                     </p>
-                    <div className="overlap-group">
-                        <div className="counter-number">
-                            {count}
-                        </div>
+                    <div className="counter-number">
+                        {count}
                     </div>
                 </div>
-                <img className="clock" src="./images/Clock.svg" alt="Clock" />
-                <img className="video-link" src="./images/VideoLink.svg" alt="Video" />
-            </div>
+                <img className="video-link" src={VideoLink} alt="Video" />
         </div>
     );
 }

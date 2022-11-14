@@ -1,19 +1,6 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Montserrat:400,700|Roboto:400,700|Nunito+Sans:400|Poppins:400,500,600|ABeeZee:400|Inter:700");
-
-@font-face {
-    font-family: "Baloo Bhai-Regular";
-    font-style: normal;
-    font-weight: 400;
-    src: url("https://fonts.animaapp.com/BalooBhai-Regular") format("truetype");
-}
-
-* {
-    box-sizing: border-box;
-}
-
 .event-frame {
+    position: relative;
+    margin-bottom: 15px;
     align-items: flex-start;
     border: 1px none;
     display: flex;
@@ -38,8 +25,9 @@
 }
 
 .container-l-color {
-    background-color: #ffffff1f;
+    background-color: #454546;
     border: 0px none;
+    /* border-left:3px solid red; */
     border-radius: 4px 4px 0px 0px;
     height: 67px;
     left: 0;
@@ -97,16 +85,21 @@
     line-height: normal;
     position: absolute;
     top: 68px;
-    width: 150px;
+    width: 170px;
+    font-size: 12px;
 }
 
+.time-text span {
+    padding-left: 15px;
+}
 
 .event-description {
-    left: 215px;
+    left: 227px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 17px;
+    top: 14px;
+    font-size: 12px;
     width: 379px;
 }
 
@@ -131,14 +124,23 @@
     letter-spacing: 0;
     line-height: 14px;
     min-width: 6px;
+    height: 16px;
+    width: 16px;
+    background-color: #EFC862;
+    border-radius: 50%;
+    color:#333;
+    font-size: 12px;;
+    text-align: center;
     white-space: nowrap;
+    position: absolute;
+    left: 500px;
+    top:71px
 }
 
 .clock {
-    height: 15px;
-    left: 139px;
+    display: block;
+    height: 16px;
     position: absolute;
-    top: 71px;
     width: 16px;
 }
 
@@ -152,7 +154,7 @@
 }
 
 .mail {
-    background-image: url(/images/union-30.svg);
+    background-image: url(./images/Mail.svg);
     background-size: 100% 100%;
     border: 1px none;
     height: 20px;
@@ -162,10 +164,10 @@
     width: 20px;
 }
 
-.mail.video-link {
-    background-image: url(/images/video-32.svg);
-    left: 649px;
-    top: 67px;
+.video-link {
+    position: absolute;
+    left: 645px;
+    top: 71px;
 }
 
 .user-details {

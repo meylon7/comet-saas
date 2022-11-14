@@ -1,18 +1,16 @@
 import React from "react";
-import './style.css' 
-//To continue investigating the case, click here
-function OperatorLink(props) {
-    const { text, link } = props;
+import './style.css'
+import Chevron from '../../../assets/images/chevron-right.svg'
+export function OperatorLink(props) {
+  const { text, link } = props;
   return (
     <div className="left-content">
-      <img className="chevron-right" src="chevron-right.svg" alt="chevron-right" />
+      <img className="chevron-right" src={Chevron} alt="" />
       <div className="investigating-link">
         <p className="to-continue-investig">
-          {text} {link}
+          {text}&nbsp; <a href="#" className="link-inv">{link}</a>
         </p>
       </div>
     </div>
   );
 }
-
-export default OperatorLink;
