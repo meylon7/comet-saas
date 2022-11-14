@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Montserrat:400,700|Roboto:400,700|Nunito+Sans:400|Poppins:400,500,600|ABeeZee:400|Inter:700");
+
+.details {
+    align-items: flex-start;
+    background-color:
+        #262626;
+    border: 1px none;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 592px;
+    overflow: hidden;
+    padding: 3px 19px;
+    position: relative;
+    width: 398px;
+}
+
+.operator-header {
+    color: var(--white);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxl);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 8px;
+    min-height: 33px;
+}
+
+.overlap-group1 {
+    align-items: center;
+    background-color:
+        #161618;
+    border-radius: 3px;
+    box-shadow: inset 3px 4px 4px #00000040;
+    display: flex;
+    height: 134px;
+    margin-top: 7px;
+    min-width: 349px;
+    padding: 0 8px;
+}
+
+.note {
+    color: var(--bon-jour);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 114px;
+    width: 326px;
+}
+
+.details-1 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 8px;
+    margin-top: 6px;
+    min-height: 32px;
+}
+
+.span2 {
+    color: var(--bon-jour);
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-l);
+    font-weight: 700;
+}
+
+.span4 {
+    color: var(--bon-jour);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l);
+    font-weight: 700;
+}
+
+.images-carousel {
+    align-items: flex-start;
+    align-self: center;
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    margin-right: 4px;
+    margin-top: 31px;
+    overflow: hidden;
+    width: 348px;
+}
+
+.carousel {
+    align-items: flex-start;
+    border: 1px none;
+    display: flex;
+    gap: 16px;
+    margin-right: -632px;
+    position: relative;
+    width: 980px;
+}
+
+.overlap-group {
+    align-items: flex-start;
+    background-color:
+        #2f3136;
+    border-radius: 3px;
+    display: flex;
+    gap: 12px;
+    height: 45px;
+    margin-left: 2px;
+    margin-top: 15px;
+    min-width: 347px;
+    padding: 8.5px 11.5px;
+}
+
+.ico-pin {
+    height: 23px;
+    width: 23px;
+}
+
+.chat-info {
+    align-self: center;
+    color:
+        #868686;
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-xl);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 2px;
+    min-height: 17px;
+    min-width: 71px;
+}
+
+.carousel-item {
+    background-image: url(property-1-carousel-100-100.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    border: 1px none;
+    border-radius: 16px;
+    height: 100px;
+    min-width: 100px;
+}
+
+.pic {
+    background-color: var(--white);
+    border: 1px none;
+    border-radius: 16px;
+    height: 100px;
+    min-width: 100px;
+}
+
+.chat {
+    align-items: flex-start;
+    display: flex;
+    height: 138px;
+    margin-top: 22px;
+    min-width: 349px;
+    position: relative;
+}
+
+.image-container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    margin-left: 6px;
+    margin-top: 3px;
+    min-height: 117px;
+    width: 38px;
+}
+
+.x-image {
+    height: 40px;
+    object-fit: cover;
+    width: 38px;
+}
+
+.textbox-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-left: 3px;
+    margin-top: 3px;
+    min-height: 124px;
+    width: 288px;
+}
+
+.textbox {
+    background-color: var(--storm-dust);
+    border: 1px none;
+    border-radius: 0px 10px 10px 10px;
+    height: 66px;
+    margin-right: 9px;
+    width: 279px;
+}
+
+.textbox-1 {
+    background-color:
+        #848983;
+    border: 1px none;
+    border-radius: 0px 10px 10px 10px;
+    height: 47px;
+    margin-left: 9px;
+    width: 279px;
+}
+
+.chat-scroll {
+    align-items: flex-start;
+    background-color:
+        #333333;
+    border-radius: 22px;
+    display: flex;
+    height: 138px;
+    justify-content: flex-end;
+    min-width: 14px;
+    padding: 5.9px 3.5px;
+}
+
+.rectangle-43 {
+    background-color: var(--storm-dust);
+    border: 1px none;
+    border-radius: 50px;
+    height: 66px;
+    width: 6px;
+}

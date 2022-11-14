@@ -15,7 +15,7 @@ const MegaMenu = () => {
                     </li>
                     <li><a href="#">&#9776; Time Frame: <span>{timeFrame}</span></a>
                         <div className="sub_menu tech" id="time-frame">
-                            <div className="filter-parent">
+                            <div className="frame-parent">
                                 <div className="div1">
                                     <h3>Quick Select</h3>
                                 </div>
@@ -74,23 +74,35 @@ const MegaMenu = () => {
                     </li>
                     <li><a href="#">&#9776; Filter:</a>
                         <div className="sub_menu" id="filter-panel">
-                            <div className="filter-parent">
-                                <div className="div1">
-                                    <h3>Quick Select</h3>
-                                    <div className="chips">
-                                        <div className="chip">chip 1</div>
-                                    </div>
-                                    <div className="chips">
-                                        <div className="chip">chip 2</div>
-                                    </div>
-                                    <div className="chips">
-                                        <div className="chip">chip 3</div>
-                                    </div>
-                                    <div className="chips">
-                                        <div className="chip">chip 4</div>
-                                    </div>
-                                </div>
-
+                            <div class="filter-parent">
+                                <div class="div01"><h3>Quick Filter</h3> </div>
+                                <div class="div02"> </div>
+                                <div class="div03"> </div>
+                                <div class="div04"> <hr size="1px" />Switch to advanced filters</div>
+                                <div class="div05" className="btn">1000</div>
+                                <div class="div06" className="btn"> 2000</div>
+                                <div class="div07" className="btn"> 3000</div>
+                                <div class="div08" className="btn"> 4000</div>
+                                <div class="div09" className="btn"> 5000</div>
+                                <div class="div010" className="btn"> Appolo</div>
+                                <div class="div011" className="btn"> Proffesor</div>
+                                <div class="div012" className="btn"> Apachi</div>
+                                <div class="div013" className="btn"> Pagasus</div>
+                                <div class="div014" className="btn"> Comet</div>
+                                <div class="div015" className="btn"> Yellow</div>
+                                <div class="div016" className="btn"> White</div>
+                                <div class="div017" className="btn"> Black</div>
+                                <div class="div018" className="btn"> Gray</div>
+                                <div class="div019" className="btn"> Green</div>
+                                <div class="div020" className="btn"> &#8249;10</div>
+                                <div class="div021" className="btn"> &#8250;50</div>
+                                <div class="div022" className="btn"> &#8250;100</div>
+                                <div class="div023" className="btn"> &#8249;100</div>
+                                <div class="div024" className="btn"> &#8250;500</div>
+                                <div class="div025" className="btn"> </div>
+                                <div class="div026" className="btn"> </div>
+                                <div class="div027" className="btn"> </div>
+                                <div class="div028" className="btn"> </div>
                             </div>
                         </div>
                     </li>
