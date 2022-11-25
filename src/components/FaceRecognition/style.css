@@ -1,0 +1,23 @@
+.add-event-face {
+    float: right;
+    font-size: 13px;
+    color: #EFC862;
+    margin-top: 50px;
+    right: 0px;
+}
+
+.details {
+    align-items: flex-start;
+    background-color:#262626;
+    color:#f2f2f2;
+    font-size:13px;
+    padding: 15px;
+    border: 1px none;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 592px;
+    overflow: hidden;
+    position: relative;
+    width: 398px;
+}

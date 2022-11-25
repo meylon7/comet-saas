@@ -10,6 +10,7 @@ body{
     background-color: var(--body-color);
     transition: var(--tran-05);
     color:#f2f2f2;
+    z-index: 0;
 }
 .home .text{
     font-size: 30px;
@@ -19,7 +20,7 @@ body{
 }
 
 .sidebar.close ~ .home{
-    left: 108px;
+    left: 130px;
     height: 100vh;
     width: calc(100% - 78px);
 }

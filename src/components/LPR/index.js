@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from "../../view/Layout";
-export const LPR = () => {
+export const LPRManagment = () => {
   return (
     <Layout>
     <h2>LPR</h2>

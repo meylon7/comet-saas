@@ -126,7 +126,6 @@
 }
 
 .carousel-item {
-    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/6354f531808f2e0bc7bcd751/releases/6366caf57423c5d69e4e6969/img/property-1-carousel-100-100@2x.svg);
     background-position: 50% 50%;
     background-size: cover;
     border: 1px none;
@@ -134,7 +133,9 @@
     height: 100px;
     min-width: 100px;
 }
-
+.carousel-item img{
+    border-radius: 16px;
+}
 .pic {
     background-color: var(--white);
     border: 1px none;

@@ -1,0 +1,199 @@
+.event-frame {
+    position: relative;
+    margin-bottom: 15px;
+    align-items: flex-start;
+    border: 1px none;
+    display: flex;
+    height: 83px;
+    justify-content: center;
+    min-width: 672px;
+}
+
+.overlap-group {
+    height: 87px;
+    margin-top: -1px;
+    position: relative;
+    width: 674px;
+}
+
+.overlap-group1 {
+    height: 85px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 674px;
+}
+
+.container-l-color {
+    background-color: #454546;
+    border: 0px none;
+    /* border-left:3px solid red; */
+    border-radius: 4px 4px 0px 0px;
+    height: 67px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 674px;
+}
+
+.indicator {
+    background-color: #ffffff99;
+    border: 0px none;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 63px;
+    width: 674px;
+}
+
+.user-photo {
+    height: 44px;
+    left: 11px;
+    object-fit: cover;
+    position: absolute;
+    top: 11px;
+    width: 48px;
+}
+
+.messenger {
+    height: 20px;
+    left: 69px;
+    position: absolute;
+    top: 65px;
+    width: 20px;
+}
+
+.telegram {
+    height: 20px;
+    left: 39px;
+    position: absolute;
+    top: 65px;
+    width: 20px;
+}
+
+.mail {
+    height: 20px;
+    left: 9px;
+    position: absolute;
+    top: 65px;
+    width: 20px;
+}
+
+.time-text {
+    left: 166px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 68px;
+    width: 170px;
+    font-size: 12px;
+}
+
+.time-text span {
+    padding-left: 15px;
+}
+
+.event-description {
+    left: 227px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 14px;
+    font-size: 12px;
+    width: 379px;
+}
+
+.overlap-group {
+    align-items: center;
+    background-color: #f1e0ac;
+    border-radius: 8px;
+    display: flex;
+    height: 16px;
+    left: 323px;
+    min-width: 16px;
+    padding: 0 5px;
+    position: absolute;
+    top: 69px;
+}
+
+.counter-number {
+    color: #1c1d22;
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-s);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 14px;
+    min-width: 6px;
+    height: 16px;
+    width: 16px;
+    background-color: #EFC862;
+    border-radius: 50%;
+    color:#333;
+    font-size: 12px;;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    left: 500px;
+    top:71px
+}
+
+.clock {
+    display: block;
+    height: 16px;
+    position: absolute;
+    width: 16px;
+}
+
+.trailing-icon {
+    border: 1px none;
+    height: 24px;
+    left: 637px;
+    position: absolute;
+    top: 23px;
+    width: 24px;
+}
+
+.mail {
+    background-image: url(./images/Mail.svg);
+    background-size: 100% 100%;
+    border: 1px none;
+    height: 20px;
+    left: 11px;
+    position: absolute;
+    top: 65px;
+    width: 20px;
+}
+
+.video-link {
+    position: absolute;
+    left: 645px;
+    top: 71px;
+}
+
+.user-details {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    left: 83px;
+    min-height: 41px;
+    position: absolute;
+    top: 10px;
+    width: 159px;
+}
+
+.event-name {
+    color: var(--bon-jour);
+    font-family: var(--font-family-baloo_bhai-regular);
+    font-size: var(--font-size-l);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 0.55px;
+    width: 112px;
+}
+
+.sub-event-name {
+    letter-spacing: 0;
+    line-height: normal;
+    width: 155px;
+}

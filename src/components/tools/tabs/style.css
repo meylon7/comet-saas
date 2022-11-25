@@ -1,5 +1,4 @@
-
- .tab-container {
+.tab-container {
     width: 500px;
     height: 50px;
     position: absolute;
@@ -8,37 +7,48 @@
     border-radius: 3px;
     overflow: hidden;
 }
- .tab-container input {
+
+.tab-container input {
     display: none;
 }
- .tab-container input:checked + label {
+
+.tab-container input:checked+label {
     color: #EFC862;
 }
- .tab-container input#tab1:checked ~ .line {
+
+.tab-container input#tab1:checked~.line {
     left: 0%;
 }
- .tab-container input#tab1:checked ~ .content-tab-container #c1 {
+
+.tab-container input#tab1:checked~.content-tab-container #c1 {
     opacity: 1;
 }
- .tab-container input#tab2:checked ~ .line {
+
+.tab-container input#tab2:checked~.line {
     left: 25%;
 }
- .tab-container input#tab2:checked ~ .content-tab-container #c2 {
+
+.tab-container input#tab2:checked~.content-tab-container #c2 {
     opacity: 1;
 }
- .tab-container input#tab3:checked ~ .line {
+
+.tab-container input#tab3:checked~.line {
     left: 50%;
 }
- .tab-container input#tab3:checked ~ .content-tab-container #c3 {
+
+.tab-container input#tab3:checked~.content-tab-container #c3 {
     opacity: 1;
 }
- .tab-container input#tab4:checked ~ .line {
+
+.tab-container input#tab4:checked~.line {
     left: 75%;
 }
- .tab-container input#tab4:checked ~ .content-tab-container #c4 {
+
+.tab-container input#tab4:checked~.content-tab-container #c4 {
     opacity: 1;
 }
- .tab-container label {
+
+.tab-container label {
     display: inline-block;
     font-size: 14px;
     height: 50px;
@@ -50,7 +60,8 @@
     transition: 0.25s background ease;
     cursor: pointer;
 }
- .tab-container label::after {
+
+.tab-container label::after {
     content: "";
     height: 2px;
     width: 100%;
@@ -61,16 +72,17 @@
     left: 0;
     transition: 0.25s ease;
 }
- .tab-container label:hover::after {
+
+.tab-container label:hover::after {
     opacity: 1;
 }
- .tab-container .line {
+
+.tab-container .line {
     position: absolute;
-    background:#EFC862;
+    background: #EFC862;
     height: 2px;
     width: 25%;
     top: 46px;
     left: 0;
     transition: 0.25s ease;
 }
- 

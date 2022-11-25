@@ -19,7 +19,7 @@ module: {
 		use: ["style-loader", "css-loader"],
 	},
 	{
-		test: /\.(woff|woff2|ttf|eot|png|jpg|svg|gif)$/i,
+		test: /\.(woff|woff2|ttf|eot|png|jpg|jpeg|svg|gif)$/i,
 		use: ['file-loader']
 	}
 	],

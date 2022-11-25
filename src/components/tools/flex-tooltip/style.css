@@ -1,0 +1,221 @@
+.flex-tooltip {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+}
+
+.flex-tooltip .trigger {
+    display: inline-block;
+    /* padding: 0.75em; */
+    z-index: 1;
+    text-decoration: none;
+    color: #f2f2f2;
+    cursor: help;
+}
+
+.flex-tooltip .trigger::before {
+    content: '';
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    transition: all 150ms ease-in-out;
+}
+
+.flex-tooltip .content {
+    display: inline-block;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #f2f2f2;
+    padding: 1em;
+    border-radius: 5px;
+    width: 280px;
+    font-size: 13px;
+    font-weight: 100;
+    transition: all 150ms ease-in-out;
+}
+
+.flex-tooltip .trigger::before {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.9);
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+.flex-tooltip .content {
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+.flex-tooltip .trigger::before {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flex-tooltip .content {
+    top: 100%;
+    left: 0;
+}
+
+.flex-tooltip.bottom .trigger::before {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.9);
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+.flex-tooltip.bottom .content {
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+.flex-tooltip.bottom .trigger::before {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flex-tooltip.bottom .content {
+    top: 100%;
+    left: 0;
+}
+
+.flex-tooltip.left .trigger::before {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-left-color: rgba(0, 0, 0, 0.9);
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+.flex-tooltip.left .content {
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+.flex-tooltip.left .trigger::before {
+    border-right: none;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100%;
+}
+
+.flex-tooltip.left .content {
+    top: -100%;
+    right: 106%;
+    right: calc(100% + 6px);
+}
+
+.flex-tooltip.right .trigger::before {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: rgba(0, 0, 0, 0.9);
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+.flex-tooltip.right .content {
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+.flex-tooltip.right .trigger::before {
+    border-left: none;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+}
+
+.flex-tooltip.right .content {
+    top: -100%;
+    left: 106%;
+    left: calc(100% + 6px);
+}
+
+.flex-tooltip.top .trigger::before {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-top-color: rgba(0, 0, 0, 0.9);
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+.flex-tooltip.top .content {
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+.flex-tooltip.top .trigger::before {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flex-tooltip.top .content {
+    top: auto;
+    bottom: 100%;
+    left: 0;
+}
+
+.flex-tooltip:hover .trigger::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.flex-tooltip:hover .content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.flex-tooltip .trigger:focus::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.flex-tooltip .trigger:focus+.content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.better {
+    text-align: center;
+    font-weight: bold;
+}
