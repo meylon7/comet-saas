@@ -5,8 +5,7 @@ export const AddEvent = () => {
         <form className="my-form">
             <div className="container">
                 <section className="h1-wrapper">
-                    <div className="top">New Event</div>
-                    <div className="bottom" aria-hidden="true">New Event</div>
+                    <div>New Event</div>
                 </section>
                 <div>
                     <input type="text" placeholder="Select Agents Group" />
@@ -32,7 +31,7 @@ export const AddEvent = () => {
                 <div className="selectdiv">
                     <span>
                         <select>
-                            <option> Select classNameification </option>
+                            <option> Select classification </option>
                             <option>UnclassNameified</option>
                             <option>OK</option>
                             <option>Warning</option>
