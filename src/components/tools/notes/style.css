@@ -21,16 +21,18 @@
 .operator-header {
     color: var(--white);
     font-size: var(--font-size-xxl);
-    font-weight: 600;
+    font-weight: 400;
     font-size:18px;
     letter-spacing: 0;
     margin-left: 8px;
+    width:58%;
 }
 
 .note-box {
     align-items: center;
-    background-color: #161618;
+    background-color: #111;
     border-radius: 3px;
+    border: 1px inset #474747;
     box-shadow: inset 3px 4px 4px #00000040;
     display: flex;
     height: 105px;
@@ -46,6 +48,7 @@
     letter-spacing: 0;
     line-height: normal;
     width: 326px;
+    margin-top: -27px;
 }
 
 .details-1 {
@@ -58,8 +61,8 @@
 
 .span2 {
     color: var(--bon-jour);
-    font-size: var(--font-size-l);
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 100;
 }
 
 .span4 {
@@ -70,7 +73,7 @@
 
 .images-carousel {
     align-items: flex-start;
-    align-self: center;
+    align-self: left;
     border: 1px none;
     display: flex;
     flex-direction: column;
@@ -92,8 +95,9 @@
 
 .chat-text {
     align-items: flex-start;
-    background-color: #2f3136;
-    border-radius: 3px;
+    background-color: #111;
+    border:1px inset #474747;
+    border-radius: 5px;
     display: flex;
     gap: 12px;
     height: 45px;
@@ -184,7 +188,7 @@
     font-size: 12px;
     padding: 7px;
     margin-right: 9.0px;
-    width: 279px;
+    width: 266px;
 }
 
 .textbox-1 {
@@ -195,7 +199,7 @@
     margin-left: 9.0px;
     font-size: 12px;
     padding: 7px;
-    width: 279px;
+    width: 268px;
 }
 
 .chat-scroll {
@@ -205,8 +209,9 @@
     display: flex;
     height: 138px;
     justify-content: flex-end;
-    min-width: 14px;
+    max-width: 9px;
     padding: 5.9px 3.5px;
+    margin-right: 5px;
 }
 
 .rectangle-43 {

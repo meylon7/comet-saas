@@ -6,8 +6,8 @@ import Paperclip from '../../../assets/images/paperclip.svg'
 import Street1 from '../../../assets/images/4.jpeg'
 import Street2 from '../../../assets/images/5.jpeg'
 import Street3 from '../../../assets/images/6.jpeg'
-import {Tooltip} from '../tooltip'
-import {FlexTooltip} from '../flex-tooltip'
+import { Tooltip } from '../tooltip'
+import { FlexTooltip } from '../flex-tooltip'
 
 export function Notes() {
   //const { operatorHeader, note, spanText1, spanText2, spanText3, spanText4, spanText5, chatInfo } = props;
@@ -16,11 +16,16 @@ export function Notes() {
   const classification = " unclassified"
   const group = "2000"
   const agent = "Meteor front office"
-  
+
   return (
     <div className="right-panel-note" >
-      <div className="operator-header" >
-        <Tooltip flow="down" text="Suspicious person">{operatorHeader}</Tooltip>
+      <div style={{ display: 'flex', width: '95%' }}>
+        <div className="operator-header">
+          <Tooltip flow="down" text="Suspicious person">{operatorHeader}</Tooltip>
+        </div>
+        <div style={{ float: 'right',width:'42%',marginTop:'5px' }}>
+          <i style={{ fontSize: '14px' }} className="far fa-clock"></i>&nbsp;&nbsp;27 11 2022 17:45:21
+        </div>
       </div>
       <div className="note-box" >
         <p className="note" >
@@ -31,26 +36,24 @@ export function Notes() {
         <span className="roboto-normal-bon-jour-13px"></span>
         <span className="">Classification : </span>{classification}<br />
         <span className="span2">Group : </span>
-        <span className="montserrat-normal-bon-jour-13px">{group}</span><br />
-        <span className="span4">
-          <FlexTooltip text={`Agent: ${agent}`}>
-            Standing infront of the house<br /> and looking into the garden for 10 min, <br />wearing blue shirt, jeans and dark glasses.
-          </FlexTooltip>
-        </span> 
+        <span style={{fontWeight:'bold',fontSize:'16px'}}>{group}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span className="span2">Agent : </span>&nbsp;&nbsp;
+        <span style={{fontWeight:'bold',fontSize:'16px'}}>{agent}</span>
+       
       </p>
       <div className="images-carousel" >
         <div className="carousel" >
-          <Pic  />
-          <Pic2  />
-          <Pic3  />
-          <Pic  />
+          <Pic />
+          <Pic2 />
+          <Pic3 />
+          <Pic />
         </div>
       </div>
-      <ChatBox  />
+      <ChatBox />
       <div className="chat-text" >
         <img className="icon-paperclip" src={Paperclip} alt="paperclip" />
         <div className="chat-info" >
-          
+          Type Here
         </div>
       </div>
     </div>
@@ -61,7 +64,7 @@ export function Notes() {
 function Pic() {
   return (
     <div className="carousel-item">
-      <img src={Street1} alt="" height="80px" />
+      <img src={Street1} alt="" height="80px" style={{border:'2px inset #474747'}} />
     </div>
   );
 }
@@ -86,7 +89,7 @@ function ChatBox() {
   const chatInfo = "I saw that guy here yestarday, please add to gray list"
   return (
     <div className="chat" >
-      <ChatScroll  />
+      <ChatScroll />
       <div className="image-container" >
         <img className="x-image" src={Boy} alt="boy-image" />
         <img className="x-image" src={Girl} alt="girl-image" />
@@ -103,7 +106,7 @@ function ChatBox() {
 function ChatScroll() {
   return (
     <div className="chat-scroll" >
-      <div className="rectangle-43" ></div>
+      <div className="rectangle-43"></div>
     </div>
   );
 }
