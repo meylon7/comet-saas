@@ -39,9 +39,9 @@ const MegaMenu = () => {
                                         <option>Last</option>
                                     </select>
                                 </div>
-                                <div className="div6">
+                                {/* <div className="div6">
                                     <button id="apply">Apply</button>
-                                </div>
+                                </div> */}
                                 <div className="div5">
                                     <hr size="1px" />
                                     <h3>Commonly used</h3>

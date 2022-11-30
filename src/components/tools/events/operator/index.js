@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "@emotion/styled";
+import '../../../../../node_modules/font-awesome/css/font-awesome.min.css';
 import Pin from '../../../../assets/images/pin.svg'
 import Counter from '../../../../assets/images/counter.svg'
 import Mail from '../../../../assets/images/Mail.svg'
@@ -12,8 +13,8 @@ import './style.css'
 export const Operator = (props) => {
     const { caseof, subcase, date, time, description, color, group, agent, classified, selected } = props;
     let selectColor = ''
-    if(selected === "true"){
-        selectColor='#efc862'
+    if (selected === "true") {
+        selectColor = `box-shadow: 0px 22px 21px -6px rgba(255,255,255,0.3);`
     }
     const Ticket = styled.div`
             width: 330px;
@@ -21,6 +22,7 @@ export const Operator = (props) => {
             position: relative;
             transition: all 300ms cubic- bezier(0.03, 0.98, 0.53, 0.99) 0s;
             background: ${color};
+            ${selectColor}
             border-radius: 15px;
             padding: 4px;
             z - index: 0;
@@ -50,7 +52,7 @@ export const Operator = (props) => {
         width: 100%;
         height: 100%;
         position: relative;
-        background: #313132;
+        background: #111;
         border-radius: 15px;
         display: flex;
     `
@@ -58,7 +60,7 @@ export const Operator = (props) => {
         width: 87%;
         padding-left: 35px;
         border-right: 2px dotted #f2f2f2;
-        height: 95%;
+        height: 99%;
         padding-top: 10px;
         fontSize:11px;
     `
@@ -76,16 +78,16 @@ export const Operator = (props) => {
             <Ticket>
                 <Wrapper>
                     <Left>
-                        <div className="operator" style={{color:selectColor}}>
+                        <div className="operator" style={{ color: selectColor }}>
                             <div className="head">
                                 <section style={{ display: "flex", width: "100%" }}>
-                                    <div style={{ width: "70%" }}>
-                                        <span style={{ fontSize: '13px', fontWeight: 'bold', display: 'block', lineHeight: '8px' }}>{caseof}</span>
-                                        <span style={{ fontSize: '12px', marginTop: '-10px' }}>{subcase}</span>
+                                    <div style={{ width: "65%" }}>
+                                        <span style={{ fontSize: '13px', fontWeight: 'bold', display: 'block', lineHeight: '13px' }}>{caseof}</span>
+                                        <i style={{ fontSize: '12px' }} className="fas fa-user-alt"></i>&nbsp;&nbsp;<span style={{ fontSize: '12px', marginTop: '-10px' }}>{subcase}</span>
                                     </div>
-                                    <div style={{ float: "right", textAlign: "right" }}>
-                                        <span style={{ fontSize: '10px', display: 'block', lineHeight: '8px' }}>{date}</span>
-                                        <span style={{ fontSize: '10px', marginTop: '-10px' }}>{time}</span>
+                                    <div style={{ width: "35%", float: "left", textAlign: "left", display: 'block' }}>
+                                        <span style={{ fontSize: '10px', display: 'block' }}><i style={{ fontSize: '12px' }} className="far fa-clock"></i>&nbsp;&nbsp;{date}</span>
+                                        <span style={{ fontSize: '10px',paddingLeft:'17px' }}>{time}</span>
                                     </div>
                                 </section>
                             </div>
@@ -93,13 +95,13 @@ export const Operator = (props) => {
                             <div className="group">
                                 <section style={{ display: "flex", width: "98%" }}>
                                     <div style={{ width: "80%" }}>
-                                        <span style={{ fontSize: '11px', fontWeight: 'bold', display: 'block', lineHeight: '8px', paddingTop: '10px' }}>Classification: {classified}</span>
-                                        <span style={{ fontSize: '11px', fontWeight: 'bold', display: 'block', lineHeight: '8px', paddingTop: '10px' }}>Group: {group}</span>
-                                        <span style={{ fontSize: '11px', fontWeight: 'bold', display: 'block', lineHeight: '8px', paddingTop: '10px' }}>Agent: {agent}</span>
+                                        <span style={{ fontSize: '11px',  display: 'block', lineHeight: '8px', paddingTop: '10px' }}>Classification: {classified}</span>
+                                        <span style={{ fontSize: '13px', fontWeight: 'bold', display: 'block', lineHeight: '8px', paddingTop: '10px' }}>{group}</span>
+                                        <span style={{ fontSize: '13px', fontWeight: 'bold', display: 'block', lineHeight: '8px', paddingTop: '10px' }}>{agent}</span>
                                     </div>
-                                    <div style={{ float: "right", textAlign: "right", width: "20%" }}>
-                                        <span style={{ cursor: "pointer", lineHeight: '8px' }}><img alt="Man" src={Man} /></span>
-                                        <span style={{ cursor: "pointer", lineHeight: '8px', display: 'block' }}><img alt="Car" src={Car} /></span>
+                                    <div style={{ float: "right", textAlign: "center", width: "20%" }}>
+                                        <span style={{ cursor: "pointer", margin: '5px' }}><i style={{ fontSize: '25px' }} className="fas fa-male"></i></span>
+                                        <span style={{ cursor: "pointer", margin: '5px', display: 'block' }}><i style={{ fontSize: '25px' }} className="fas fa-car"></i></span>
                                     </div>
                                 </section>
 
@@ -111,10 +113,10 @@ export const Operator = (props) => {
                     <Right>
                         <span style={{ cursor: "pointer" }}><img alt="pin" src={Pin} /></span><br />
                         <span style={{ cursor: "pointer" }}><img alt="Counter" src={Counter} /></span>
-                        <div style={{ paddingTop: '30px' }}>
-                            <span style={{ cursor: "pointer", display: 'block' }}><img alt="Mail" src={Mail} /></span>
-                            <span style={{ cursor: "pointer", display: 'block' }}><img alt="Messenger" src={Messenger} /></span>
-                            <span style={{ cursor: "pointer" }}><img alt="VideoLink" src={VideoLink} /></span>
+                        <div style={{ paddingTop: '45px', background: 'transparent' }}>
+                            <section className="icon-right-menu" style={{ cursor: "pointer", postion: 'relative' }}><img alt="Mail" src={Mail} /></section>
+                            <section style={{ cursor: "pointer", postion: 'relative', marginTop: '-6px' }}><img alt="Messenger" src={Messenger} /></section>
+                            <section style={{ cursor: "pointer", postion: 'relative', marginTop: '-6px' }}><img style={{ background: 'transparent' }} alt="VideoLink" src={VideoLink} /></section>
                         </div>
                     </Right>
                 </Wrapper>

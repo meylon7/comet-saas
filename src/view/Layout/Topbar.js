@@ -12,9 +12,7 @@ const Topbar = () => {
         <section>
           <MegaMenu />
         </section>
-        <label htmlFor="click" className="menu-btn">
-          <i className="fas fa-bars"></i>
-        </label>
+        
         <ul>
           <li>
             <a href="#">

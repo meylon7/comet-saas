@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Layout from "../../view/Layout";
-import { OperatorLink, Notes, FaceRecognition, Analytic, Operator, LPR, AddEvent, Toast } from '../tools'
+import { OperatorLink, Notes, FaceRecognition, Analytic, Operator, LPR, AddEvent, Toast, Pagination } from '../tools'
 import './style.css'
 import './tabs.css'
 export const EventsManagment = () => {
@@ -26,7 +26,7 @@ export const EventsManagment = () => {
               <div className="page-contents">
                 <div className="event-grid">
                   <div className="event-box">
-                    <Operator caseof="Moshe Eylon" date="Feb 18, 2022" time="12:45:33" selected="true" subcase="Just small header" classified="unclassified" color="red" group="2000" agent="Meteor front office" description="Standing infront of the house and looking into the garden for 10 min, wearing blue shirt, jeans and dark glasses. ... " />
+                    <Operator caseof="Moshe Eylon" date="Feb 18,2022" time="12:45:33" selected="true" subcase="Just small header" classified="unclassified" color="red" group="2000" agent="Meteor front office" description="Standing infront of the house and looking into the garden for 10 min, wearing blue shirt, jeans and dark glasses. ... " />
                   </div>
                   <div className="event-box">
                     <Analytic color="blue" date="Feb 18, 2022" time="12:45:33" caseof="Intrusion" group="1000" agent="Office meteor" classified="Unclassified" count="6" camera="east camera" />
@@ -49,6 +49,10 @@ export const EventsManagment = () => {
                   <div className="event-box">
                     <LPR color="orange" caseof="25-685-65" subcase="Part of whitelist" date="Feb 18, 2022" time="12:45:33" relation="delivery man" seen="3" alert="Feb 18, 2022 @ 12:45:33" group="3000" agent="Meteor front office" />
                   </div>
+                  <div className="event-box">
+                    <Operator caseof="Moshe Eylon" date="Feb 18,2022" time="12:45:33" subcase="Just small header" classified="unclassified" color="red" group="2000" agent="Meteor front office" description="Standing infront of the house and looking into the garden for 10 min, wearing blue shirt, jeans and dark glasses. ... " />
+                  </div>
+                  <Pagination />
                 </div>
               </div>
             </div>
@@ -89,10 +93,8 @@ export const EventsManagment = () => {
         </div>
         <div className="right-bottom">
           <div className="right-top">
-            <section className="operator-wrapper">
-              <div className="top">Operator Notes</div>
-              <div className="bottom" aria-hidden="true">Operator Notes</div>
-            </section>
+              <div>Operator Notes</div>
+              
           </div><br />
           <OperatorLink text="To continue investigating the case, " link="click here" />
           <div className="details">

@@ -55,7 +55,7 @@ export const EventBox = (props) => {
         width: 85%;
         padding-left: 35px;
         border-right: 2px dotted #f2f2f2;
-        height: 95%;
+        height: 99%;
         padding-top: 10px;
     `
     const Right = styled.div`

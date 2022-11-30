@@ -12,7 +12,7 @@
 .lpr .head {
     grid-area: 1 / 1 / 2 / 2;
     width: 100%;
-    height: 30px;
+    height: 34px;
     border-bottom: 1px solid #f2f2f2;
     font-size: 11px;
     vertical-align: text-top;
