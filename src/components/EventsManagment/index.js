@@ -52,7 +52,7 @@ export const EventsManagment = () => {
                   <div className="event-box">
                     <Operator caseof="Moshe Eylon" date="Feb 18,2022" time="12:45:33" subcase="Just small header" classified="unclassified" color="red" group="2000" agent="Meteor front office" description="Standing infront of the house and looking into the garden for 10 min, wearing blue shirt, jeans and dark glasses. ... " />
                   </div>
-                  <Pagination />
+                  <div style={{width:'98%',float:'right', marginTop:'-35px'}}><Pagination /></div>
                 </div>
               </div>
             </div>
