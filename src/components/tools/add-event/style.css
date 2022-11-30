@@ -254,7 +254,7 @@ label {
 
 .btn-color-mode-switch>label.btn-color-mode-switch-inner:after {
     content: attr(data-off);
-    width: 125px;
+    width: 122px;
     height: 16px;
     background: #484E56;
     border-radius: 26px;
@@ -351,7 +351,7 @@ label {
 
 .color-container .box .col label::after{
     content: '';
-    font-family: 'fontAwesome';
+    font-size:14px;
     position: absolute;
     top: -10px;  left: 50%;
     transform: translate(-50%,-150%);
@@ -359,17 +359,17 @@ label {
 
 .color-container .box .col:nth-of-type(1) label::after{
     content: 'Blue';
-    font-size:16px;
+    font-size:14px;
   color:#f2f2f2;
 }
 .color-container .box .col:nth-of-type(2) label::after{
     content: 'Red';
-    font-size:16px;
+    font-size:14px;
     color:#f2f2f2;
 }
 .color-container .box .col:nth-of-type(3) label::after{
     content: 'Orange';
-    font-size:16px;
+    font-size:14px;
     color:#f2f2f2;
 }
 
