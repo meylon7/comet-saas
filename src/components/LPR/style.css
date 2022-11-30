@@ -1,0 +1,250 @@
+.lpr-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.lpr-left {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 75%;
+}
+
+.lpr-right {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 25%;
+}
+
+.lpr-tab_wrapper {
+    width: 500px;
+    height: 200px;
+    margin: 2px auto;
+}
+
+.lpr-tab_wrapper>label {
+    display: block;
+    float: left;
+    padding: 12px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color .3s;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.lpr-tab_wrapper>label:hover,
+.lpr-tab_wrapper>input:checked+label {
+    background: #333;
+    color: #fff;
+}
+
+.lpr-gmap-tab {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.lpr-eliteplaytabs {
+    clear: both;
+    perspective: 600px;
+}
+
+.lpr-tab_style_one {
+    clear: both;
+}
+
+.lpr-eliteplaytabs>div {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    border: 2px solid #777;
+    padding: 10px;
+    line-height: 1.4em;
+    opacity: 0;
+    transform: rotateX(-20deg);
+    transform-origin: top center;
+    transition: opacity .3s, transform 1s;
+    z-index: 0;
+    background: #000;
+    color: #f2f2f2;
+}
+
+#lpr-style_one_tab_nav_1:checked~.lpr-eliteplaytabs>div:nth-of-type(1),
+#lpr-style_one_tab_nav_2:checked~.lpr-eliteplaytabs>div:nth-of-type(2),
+#lpr-style_one_tab_nav_3:checked~.lpr-eliteplaytabs>div:nth-of-type(3),
+#lpr-style_one_tab_nav_4:checked~.lpr-eliteplaytabs>div:nth-of-type(4) {
+    transform: rotateX(0);
+    opacity: 1;
+    z-index: 1;
+}
+
+.lpr-tab_stle_title {
+    text-align: center;
+    background: #4ec6de;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+
+.lpr-single_tab_s_one h2 {
+    color: #f2f2f2;
+    display: flex;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+} */
+
+.titular {
+    display: block;
+    color: #f2f2f2;
+    line-height: 20px;
+    margin: 0;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.block {
+    margin: 0;
+    background: #000;
+    border-radius: 5px;
+    float: left;
+    width: 400px;
+    overflow: hidden;
+}
+
+
+.line-chart-block,
+.bar-chart-block {
+    height: 200px;
+}
+
+
+[class^='eje-'] {
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+    width: 100%;
+    padding: 1rem 1rem 0 2rem;
+    height: 80%;
+}
+
+.eje-x {
+    height: 1.1rem;
+}
+
+.eje-y li {
+    height: 25%;
+    border-top: 1px solid #777;
+}
+
+[data-ejeY]:before {
+    content: attr(data-ejeY);
+    display: inline-block;
+    width: 2rem;
+    text-align: right;
+    line-height: 0;
+    position: relative;
+    left: -2.5rem;
+    top: -.5rem;
+}
+
+.eje-x li {
+    float: left;
+    text-align: center;
+}
+
+
+.grafico.bar-chart {
+    background: #777;
+    padding: 0 1rem 1rem 1rem;
+    width: 100%;
+    height: 60%;
+    left: 19%;
+    position: relative;
+    color: #fff;
+    font-size: 80%;
+}
+
+.bar-chart [class^='eje-'] {
+    padding: 0 1rem 0 2rem;
+}
+
+.bar-chart .eje-x {
+    bottom: 0;
+}
+
+.bar-chart .eje-y li {
+    height: 20%;
+    border-top: 1px solid #fff;
+}
+
+.bar-chart .eje-x li {
+    width: 15%;
+    position: relative;
+    text-align: left;
+}
+
+.bar-chart .eje-x li i {
+    display: inline-block;
+}
+
+.bar-chart .eje-x li:before {
+    content: '';
+    position: absolute;
+    bottom: 1.5rem;
+    width: 80%;
+    box-shadow: 3px 0 rgba(0, 0, 0, .1), 3px -3px rgba(0, 0, 0, .1);
+}
+
+.bar-chart .eje-x li:nth-child(1):before {
+    background: #E64C65;
+    height: 250%;
+}
+
+.bar-chart .eje-x li:nth-child(2):before {
+    background: #11A8AB;
+    height: 300%;
+}
+
+.bar-chart .eje-x li:nth-child(3):before {
+    background: #FCB150;
+    height: 350%;
+}
+
+.bar-chart .eje-x li:nth-child(4):before {
+    background: #4FC4F6;
+    height: 290%;
+}
+
+.bar-chart .eje-x li:nth-child(5):before {
+    background: #FFED0D;
+    height: 250%;
+}
+
+.bar-chart .eje-x li:nth-child(6):before {
+    background: #F46FDA;
+    height: 340%;
+}
+
+.bar-chart .eje-x li:nth-child(7):before {
+    background: #15BFCC;
+    height: 450%;
+}
+
+/* slider */

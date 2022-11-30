@@ -40,7 +40,7 @@ const Sidebar = () => {
         <div className="menu">
           <ul className="menu-links">
             <li className="nav-link">
-              <Link to="/" >
+              <Link to="/managment" >
                 <i className='bx bx-home-alt icon' >
                   <img src={Event} alt="events" />
                 </i>
@@ -49,7 +49,7 @@ const Sidebar = () => {
             </li>
 
             <li className="nav-link">
-            <Link to="/lpr" >
+            <Link to="/" >
                 <i className='bx bx-bar-chart-alt-2 icon' >
                   <img src={LPR} alt="LPR" />
                 </i>

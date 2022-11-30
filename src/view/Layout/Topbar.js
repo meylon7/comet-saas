@@ -18,22 +18,22 @@ const Topbar = () => {
         <ul>
           <li>
             <a href="#">
-              <img src={Folder} alt="Folder" />
+              <img src={Folder} alt="Folder" height="18px" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={Config} alt="Config" />
+              <img src={Config} alt="Config" height="18px" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={Search} alt="Search" />
+              <img src={Search} alt="Search" height="18px" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={User} alt="User" />
+              <img src={User} alt="User" height="18px" />
             </a>
           </li>
         </ul>

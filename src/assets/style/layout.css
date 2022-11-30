@@ -1,7 +1,12 @@
-body{
+/* @import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic") */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
     overflow: hidden;
+    font-family: 'Open Sans', 'Source Sans Pro', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
 }
-.home{
+
+.home {
     position: absolute;
     top: 90px;
     left: 300px;
@@ -9,21 +14,23 @@ body{
     width: calc(100% - 250px);
     background-color: var(--body-color);
     transition: var(--tran-05);
-    color:#f2f2f2;
+    color: #f2f2f2;
     z-index: 0;
 }
-.home .text{
+
+.home .text {
     font-size: 30px;
     font-weight: 500;
     color: #ffffff;
     padding: 12px 60px;
 }
 
-.sidebar.close ~ .home{
+.sidebar.close~.home {
     left: 130px;
     height: 100vh;
     width: calc(100% - 78px);
 }
-body.dark .home .text{
+
+body.dark .home .text {
     color: #fff;
 }

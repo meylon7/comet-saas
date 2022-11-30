@@ -31,9 +31,7 @@
 }
 
 .to-continue-investig {
-    color:
-        #ffffff;
-    font-family: var(--font-family-arial-regular);
+    color: #f2f2f2;
     font-size: var(--font-size-m);
     font-weight: 400;
     letter-spacing: 0;

@@ -1,0 +1,399 @@
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    font-size: 13px;
+    color: #f2f2f2;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: none;
+}
+
+[placeholder]::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, .8);
+}
+
+[placeholder]:hover::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, .4);
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+[placeholder]::-moz-placeholder {
+    color: rgba(255, 255, 255, .8);
+}
+
+[placeholder]:hover::-moz-placeholder {
+    color: rgba(255, 255, 255, .4);
+}
+
+[placeholder]:focus::-moz-placeholder {
+    color: transparent;
+}
+
+[placeholder]:-ms-input-placeholder {
+    color: rgba(255, 255, 255, .8);
+}
+
+[placeholder]:hover:-ms-input-placeholder {
+    color: rgba(255, 255, 255, .4);
+}
+
+[placeholder]:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+form {
+    width: 400px;
+    margin: auto;
+}
+
+input[type="text"] {
+    display: block;
+    width: 400px;
+    margin: 0 0 20px;
+    padding: 8px 12px 10px 12px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    background: #333;
+    font-size: 13px;
+}
+
+textarea {
+    display: block;
+    width: 400px;
+    height: 150px;
+    margin: 0 0 20px;
+    padding: 8px 12px 10px 12px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    background: #333;
+    font-size: 13px;
+}
+
+.radio {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px 20px 0;
+}
+
+.radio input[type="radio"] {
+    vertical-align: middle;
+    opacity: 0;
+}
+
+.radio label {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.radio input[type="radio"]+label:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: -3px 5px 0 -15px;
+    vertical-align: middle;
+    font-size: 14px;
+    font-family: fontawesome;
+    line-height: 19px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .25);
+}
+
+.radio input[type="radio"]+label:before {
+    border-radius: 50%;
+}
+
+.radio input[type="radio"]:hover+label:before {
+    content: '\f111';
+    font-size: 9px;
+    color: rgba(255, 255, 255, .4);
+}
+
+.radio input[type="radio"]:checked+label:before {
+    content: '\f111';
+    font-size: 9px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.radio .sex {
+    font: 20px fontawesome;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 150px;
+    margin: 20px 0 20px;
+    padding: 8px 0 10px 0;
+    text-align: center;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    background: #333;
+}
+
+.selectdiv {
+    position: relative;
+    /*Don't really need this just for demo styling*/
+
+    float: left;
+    padding-bottom: 20px;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+    display: none;
+}
+
+.selectdiv:after {
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: #f2f2f2;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 11px;
+    /*Adjust for position however you want*/
+
+    top: 18px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    /*left line */
+
+    position: absolute;
+    pointer-events: none;
+}
+
+.selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add some styling */
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    background: #333;
+    color: #f2f2f2;
+    display: block !important;
+    min-width: 400px;
+    height: 50px;
+    float: right;
+    padding: 0px 24px;
+    font-size: 13px;
+    line-height: 1.75;
+    background-image: none;
+    -ms-word-break: normal;
+    word-break: normal;
+}
+
+/*switch styles*/
+
+div.btn-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+div.btn-container {
+    display: inline-block;
+    position: relative;
+}
+
+label {
+    font-size: 14px;
+    color: #f2f2f2;
+
+    font-weight: 500;
+}
+
+.btn-color-mode-switch {
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+}
+
+.btn-color-mode-switch>label.btn-color-mode-switch-inner {
+    margin: 0px;
+    width: 250px;
+    height: 30px;
+    background: #333;
+    border-radius: 26px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
+    display: block;
+}
+
+.btn-color-mode-switch>label.btn-color-mode-switch-inner:before {
+    content: attr(data-on);
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    top: 7px;
+    right: 20px;
+
+}
+
+.btn-color-mode-switch>label.btn-color-mode-switch-inner:after {
+    content: attr(data-off);
+    width: 125px;
+    height: 16px;
+    background: #484E56;
+    border-radius: 26px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 6px -2px #111;
+    padding: 5px 0px;
+}
+
+
+.btn-color-mode-switch input[type="checkbox"] {
+    cursor: pointer;
+    width: 125px;
+    height: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 0px;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner {
+    background: #333;
+    color: #fff;
+    width: 250px;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner:after {
+    content: attr(data-on);
+    left: 125px;
+    background: #484E56;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner:before {
+    content: attr(data-off);
+    right: auto;
+    left: 20px;
+}
+
+
+.btn-color-mode-switch input[type="checkbox"]:checked~.alert {
+    display: block;
+}
+
+/* color select section */
+.color-container{
+    position: relative;
+    width: 100%;  
+    min-height: 120px;
+}
+.color-container .box{
+    position: absolute;
+    top: 50%;  transform: translateY(-50%);
+    width: 100%;  text-align: center;
+}
+.color-container .box .col{
+    display: inline-block;
+    margin: 0 40px;
+}
+.color-container .box .col input{
+    appearance: none;
+}
+.color-container .box .col label{
+    position: relative;
+    display: block;
+    width: 50px;  height: 50px;
+    border-radius: 50%;
+    background: #262626;
+    box-shadow: 0 0 0 5px #1c1a1a , 0 0 0 15px #262626;
+}
+.color-container .box .col label::before{
+    content: '';
+    position: absolute;
+    top: 20px;  bottom: 20px;  left: 20px;   right: 20px;
+    border-radius: 50%;
+    background: #1c1a1a;
+}
+.color-container .box .col #check1:checked + label::before{
+    background: blue;
+    box-shadow: 0 0 20px 5px blue;
+}
+.color-container .box .col #check2:checked + label::before{
+    background: red;
+    box-shadow: 0 0 20px 5px red;
+}
+.color-container .box .col #check3:checked + label::before{
+    background: orange;
+    box-shadow: 0 0 20px 5px orange;
+}
+
+.color-container .box .col label::after{
+    content: '';
+    font-family: 'fontAwesome';
+    position: absolute;
+    top: -10px;  left: 50%;
+    transform: translate(-50%,-150%);
+}
+
+.color-container .box .col:nth-of-type(1) label::after{
+    content: 'Blue';
+    font-size:16px;
+  color:#f2f2f2;
+}
+.color-container .box .col:nth-of-type(2) label::after{
+    content: 'Red';
+    font-size:16px;
+    color:#f2f2f2;
+}
+.color-container .box .col:nth-of-type(3) label::after{
+    content: 'Orange';
+    font-size:16px;
+    color:#f2f2f2;
+}
+
+.h1-wrapper {
+    display: grid;
+    place-content: center;
+    background-color: var(--background-color);
+    min-height:100px;
+    font-size: clamp(1rem, .5rem + 5vw, 3rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-color);
+  }
+  
+  .h1-wrapper > div {
+    grid-area: 1/1/-1/-1;
+  }
+  .top {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+  }
+  .bottom {
+    clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+    color: transparent;
+    background: -webkit-linear-gradient(177deg, black 53%, var(--text-color) 65%);
+    background: linear-gradient(177deg, black 53%, var(--text-color) 65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.02em);
+  }

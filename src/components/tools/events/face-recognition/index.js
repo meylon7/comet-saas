@@ -6,9 +6,14 @@ import Mail from '../../../../assets/images/Mail.svg'
 import Messenger from '../../../../assets/images/Messenger.svg'
 import VideoLink from '../../../../assets/images/VideoLink.svg'
 import FaceRecognitionPic from '../../../../assets/images/face-rec.svg'
+import Suspect from '../../../../assets/images/suspect.svg'
+import './style.css'
 export const FaceRecognition = (props) => {
-    const { caseof, subcase, dateof, description, color, group, agent } = props;
-    
+    const { caseof, subcase, date, time, confidence, gender, age, color, group, agent, score, nameof, selected } = props;
+    let selectBorder = ''
+    if(selected === "true"){
+        selectBorder='2px double #efc862'
+    }
     const Ticket = styled.div`
             width: 330px;
             height: 180px;
@@ -49,32 +54,58 @@ export const FaceRecognition = (props) => {
         display: flex;
     `
     const Left = styled.div`
-        width: 85%;
+        width: 87%;
         padding-left: 35px;
         border-right: 2px dotted #f2f2f2;
         height: 95%;
         padding-top: 10px;
     `
     const Right = styled.div`
-        width: 15%;
+        width: 13%;
         height: 100%;
         text-align: center;
         padding-top: 10px;
         padding-right: 8px;
     `
-    
+
     return (
         <>
-            <img alt="pin" src={FaceRecognitionPic} style={{ position: 'relative', top: '121px', right: "30px", zIndex: "11", width: "50px" }} />
+            <img alt="pin" src={FaceRecognitionPic} style={{ position: 'relative', top: '118px', right: "30px", zIndex: "11", width: "50px" }} />
             <Ticket>
                 <Wrapper>
                     <Left>
-                        <span style={{ fontSize: '13px', fontWeight: 'bold', display: 'block',lineHeight:'8px' }}>{caseof}</span>
-                        <span style={{ fontSize: '12px', marginTop: '-10px' }}>{subcase}</span>
-                        <hr size="1px" />
-                        <div style={{fontSize: '11px'}}>{description}</div>
-                        <span style={{ fontSize: '12px', fontWeight: 'bold', display: 'block',lineHeight:'8px', paddingTop:'10px' }}>Group: {group}</span>
-                        <span style={{ fontSize: '12px', fontWeight: 'bold', display: 'block',lineHeight:'8px', paddingTop:'10px' }}>Agent: {agent}</span>
+                        <div className="face">
+                            <div className="head">
+                                <section style={{ display: "flex", width: "100%" }}>
+                                    <div style={{ width: "70%" }}>
+                                        <span style={{ fontSize: '13px', fontWeight: 'bold', display: 'block', lineHeight: '8px' }}>{caseof}</span>
+                                        <span style={{ fontSize: '12px', marginTop: '-10px' }}>{subcase}</span>
+                                    </div>
+                                    <div style={{ float: "right", textAlign: "right" }}>
+                                        <span style={{ fontSize: '10px', display: 'block', lineHeight: '8px' }}>{date}</span>
+                                        <span style={{ fontSize: '10px', marginTop: '-10px' }}>{time}</span>
+                                    </div>
+                                </section>
+                            </div>
+                            <div className='description'>
+                                <section style={{ display: "flex", width: "98%" }}>
+                                    <div style={{ width: "65%" }}>
+                                        <span style={{ fontSize: '11px', fontWeight: 'bold', display: 'block', lineHeight: '8px', paddingTop: '10px' }}>Confidence: {confidence}</span>
+                                        <span style={{ fontSize: '11px', fontWeight: 'bold', display: 'block', lineHeight: '8px', paddingTop: '10px' }}>Score: {score}</span>
+                                        <span style={{ fontSize: '11px', fontWeight: 'bold', display: 'block', lineHeight: '8px', paddingTop: '10px' }}>Gender: {gender}</span>
+                                        <span style={{ fontSize: '11px', fontWeight: 'bold', display: 'block', lineHeight: '8px', paddingTop: '10px' }}>Age est: {age}</span>
+                                    </div>
+                                    <div style={{ float: "right", textAlign: "right", width: "35%", marginTop: "5px" }}>
+                                        <span style={{}}><img alt="Suspect" src={Suspect} /></span>{nameof}
+                                    </div>
+                                </section>
+                            </div>
+                            <div className="group">
+
+                                <span style={{ fontSize: '11px', fontWeight: 'bold', display: 'block', lineHeight: '8px', paddingTop: '10px' }}> {group}</span>
+                                <span style={{ fontSize: '11px', fontWeight: 'bold', display: 'block', lineHeight: '8px', paddingTop: '10px' }}> {agent}</span>
+                            </div>
+                        </div>
                     </Left>
                     <Right>
                         <span style={{ cursor: "pointer" }}><img alt="pin" src={Pin} /></span><br />

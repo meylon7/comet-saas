@@ -1,0 +1,45 @@
+.card {
+    position: relative;
+    border-radius: 0.25rem;
+    margin: 0.125rem;
+    width: 5%;
+    height: 60%;
+    transition: all 0.8s;
+    cursor: pointer;
+    background: #000;
+}
+
+.text-value {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: #fff;
+}
+
+.card.expanded {
+    flex: auto;
+}
+
+.card.expanded .text-value {
+    visibility: visible;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.vertical-text {
+    writing-mode: vertical-lr;
+    /* left to right */
+    writing-mode: vertical-rl;
+    /* right to left */
+    float: right;
+    padding-right: 3px;
+    font-size: 16px;
+    text-align: right;
+    color: #f2f2f2;
+    padding-top: 25px;
+}

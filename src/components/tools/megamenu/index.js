@@ -7,11 +7,10 @@ const MegaMenu = () => {
             <div className="mega_menu">
                 <ul>
 
-                    <li><span className="search-input"><div>
-                        <input type="search" placeholder="What are you looking for?" />
-                        <button>Search</button>
-                    </div></span>
-
+                    <li>
+                        <div id="searchbar">
+                            <input id="search_input" type="text" name="" placeholder="Search..." />
+                        </div>
                     </li>
                     <li><a href="#">&#9776; Time Frame: <span>{timeFrame}</span></a>
                         <div className="sub_menu tech" id="time-frame">
@@ -75,34 +74,34 @@ const MegaMenu = () => {
                     <li><a href="#">&#9776; Filter:</a>
                         <div className="sub_menu" id="filter-panel">
                             <div className="filter-parent">
-                                <div className="div01"><h3>Quick Filter</h3> </div>
-                                <div className="div02"> </div>
-                                <div className="div03"> </div>
+                                <div className="div01 "><h3>Quick Filter</h3> </div>
+                                <div className="div02 "> </div>
+                                <div className="div03 "> </div>
                                 <div className="div04"> <hr size="1px" />Switch to advanced filters</div>
-                                <div className="div05" className="btn">1000</div>
-                                <div className="div06" className="btn"> 2000</div>
-                                <div className="div07" className="btn"> 3000</div>
-                                <div className="div08" className="btn"> 4000</div>
-                                <div className="div09" className="btn"> 5000</div>
-                                <div className="div010" className="btn"> Appolo</div>
-                                <div className="div011" className="btn"> Proffesor</div>
-                                <div className="div012" className="btn"> Apachi</div>
-                                <div className="div013" className="btn"> Pagasus</div>
-                                <div className="div014" className="btn"> Comet</div>
-                                <div className="div015" className="btn"> Yellow</div>
-                                <div className="div016" className="btn"> White</div>
-                                <div className="div017" className="btn"> Black</div>
-                                <div className="div018" className="btn"> Gray</div>
-                                <div className="div019" className="btn"> Green</div>
-                                <div className="div020" className="btn"> &#8249;10</div>
-                                <div className="div021" className="btn"> &#8250;50</div>
-                                <div className="div022" className="btn"> &#8250;100</div>
-                                <div className="div023" className="btn"> &#8249;100</div>
-                                <div className="div024" className="btn"> &#8250;500</div>
-                                <div className="div025" className="btn"> </div>
-                                <div className="div026" className="btn"> </div>
-                                <div className="div027" className="btn"> </div>
-                                <div className="div028" className="btn"> </div>
+                                <div className="div05 btn" >1000</div>
+                                <div className="div06 btn"> 2000</div>
+                                <div className="div07 btn"> 3000</div>
+                                <div className="div08 btn"> 4000</div>
+                                <div className="div09 btn"> 5000</div>
+                                <div className="div010 btn"> Appolo</div>
+                                <div className="div011 btn"> Proffesor</div>
+                                <div className="div012 btn"> Apachi</div>
+                                <div className="div013 btn"> Pagasus</div>
+                                <div className="div014 btn"> Comet</div>
+                                <div className="div015 btn"> Yellow</div>
+                                <div className="div016 btn"> White</div>
+                                <div className="div017 btn"> Black</div>
+                                <div className="div018 btn"> Gray</div>
+                                <div className="div019 btn"> Green</div>
+                                <div className="div020 btn"> &#8249;10</div>
+                                <div className="div021 btn"> &#8250;50</div>
+                                <div className="div022 btn"> &#8250;100</div>
+                                <div className="div023 btn"> &#8249;100</div>
+                                <div className="div024 btn"> &#8250;500</div>
+                                <div className="div025 btn"> </div>
+                                <div className="div026 btn"> </div>
+                                <div className="div027 btn"> </div>
+                                <div className="div028 btn"> </div>
                             </div>
                         </div>
                     </li>

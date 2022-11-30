@@ -118,7 +118,6 @@
 
 .counter-number {
     color: #1c1d22;
-    font-family: var(--font-family-nunito_sans);
     font-size: var(--font-size-s);
     font-weight: 400;
     letter-spacing: 0;
@@ -183,7 +182,6 @@
 
 .event-name {
     color: var(--bon-jour);
-    font-family: var(--font-family-baloo_bhai-regular);
     font-size: var(--font-size-l);
     font-weight: 400;
     letter-spacing: 0;

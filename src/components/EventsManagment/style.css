@@ -20,7 +20,6 @@
     padding-top: 45px;
     grid-area: 1 / 2 / 2 / 3;
     color: #EFC862;
-    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 28px;
     min-width: 450px;
@@ -32,15 +31,6 @@
 
 .right-bottom {
     grid-area: 2 / 2 / 3 / 3;
-}
-
-.add-event {
-    float: left;
-    font-size: 13px;
-    color: #EFC862;
-    margin-top: 50px;
-    margin-left:590px;
-    cursor: pointer;
 }
 
 .details {
@@ -71,4 +61,5 @@
     margin:12px;
     align-self: auto;
     flex:0 1 auto;
+    margin-top: -20px;
 }

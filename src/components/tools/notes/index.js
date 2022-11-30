@@ -3,9 +3,9 @@ import './style.css'
 import Boy from '../../../assets/images/boy-image.svg'
 import Girl from '../../../assets/images/girl-image.svg'
 import Paperclip from '../../../assets/images/paperclip.svg'
-import Street1 from '../../../assets/images/street1.jpeg'
-import Street2 from '../../../assets/images/street2.jpeg'
-import Street3 from '../../../assets/images/street3.jpeg'
+import Street1 from '../../../assets/images/4.jpeg'
+import Street2 from '../../../assets/images/5.jpeg'
+import Street3 from '../../../assets/images/6.jpeg'
 import {Tooltip} from '../tooltip'
 import {FlexTooltip} from '../flex-tooltip'
 
@@ -61,21 +61,21 @@ export function Notes() {
 function Pic() {
   return (
     <div className="carousel-item">
-      <img src={Street1} alt="" width="100px" />
+      <img src={Street1} alt="" height="80px" />
     </div>
   );
 }
 function Pic2() {
   return (
     <div className="carousel-item">
-      <img src={Street2} alt="" width="100px" />
+      <img src={Street2} alt="" height="80px" />
     </div>
   );
 }
 function Pic3() {
   return (
     <div className="carousel-item">
-      <img src={Street3} alt="" width="100px" />
+      <img src={Street3} alt="" height="80px" />
     </div>
   );
 }

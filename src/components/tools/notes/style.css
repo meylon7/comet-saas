@@ -20,7 +20,6 @@
 
 .operator-header {
     color: var(--white);
-    font-family: var(--font-family-poppins);
     font-size: var(--font-size-xxl);
     font-weight: 600;
     font-size:18px;
@@ -42,7 +41,6 @@
 
 .note {
     color: var(--bon-jour);
-    font-family: var(--font-family-roboto);
     font-size: var(--font-size-m);
     font-weight: 400;
     letter-spacing: 0;
@@ -60,14 +58,12 @@
 
 .span2 {
     color: var(--bon-jour);
-    font-family: var(--font-family-montserrat);
     font-size: var(--font-size-l);
     font-weight: 700;
 }
 
 .span4 {
     color: var(--bon-jour);
-    font-family: var(--font-family-roboto);
     font-size: var(--font-size-l);
     font-weight: 700;
 }
@@ -115,7 +111,6 @@
 .chat-info {
     align-self: center;
     color: #868686;
-    font-family: var(--font-family-montserrat);
     font-size: var(--font-size-xl);
     font-weight: 400;
     letter-spacing: 0;

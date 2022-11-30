@@ -19,7 +19,18 @@
 .tab-container input#tab1:checked~.line {
     left: 0%;
 }
-
+.plus-sign{
+    border: 3px solid #EFC862;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    margin-left: 50px;
+    line-height: 37px !important;
+    margin-top: 5px;
+    font-size: 20px !important;
+    vertical-align: middle;
+    position: relative !important;
+}
 .tab-container input#tab1:checked~.content-tab-container #c1 {
     opacity: 1;
 }

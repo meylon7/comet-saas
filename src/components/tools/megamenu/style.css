@@ -59,34 +59,7 @@
 	z-index: 10;
 }
 
-.mega_menu input {
-	background: #222;
-	background: linear-gradient(#333, #222);
-	border: 1px solid #444;
-	border-radius: 5px 0 0 5px;
-	box-shadow: 0 2px 0 #000;
-	color: #888;
-	display: block;
-	float: left;
-	font-family: 'Cabin', helvetica, arial, sans-serif;
-	font-size: 13px;
-	font-weight: 400;
-	height: 40px;
-	margin: 0;
-	padding: 0 10px;
-	text-shadow: 0 -1px 0 #000;
-	width: 200px;
-}
 
-input:focus {
-	animation: glow 800ms ease-out infinite alternate;
-	background: #222922;
-	background: linear-gradient(#333933, #222922);
-	border-color: #EFC862;
-	box-shadow: 0 0 5px #B7A472, inset 0 0 5px rgba(0, 255, 0, .1), 0 2px 0 #000;
-	color: #efe;
-	outline: none;
-}
 
 .mega_menu button {
 	background: #222;
@@ -97,7 +70,6 @@ input:focus {
 	color: #888;
 	display: block;
 	float: left;
-	font-family: 'Cabin', helvetica, arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	height: 40px;
@@ -107,7 +79,7 @@ input:focus {
 	width: 100px;
 }
 
-.mega_menu button:hover {
+*/ .mega_menu button:hover {
 	color: #B7A472;
 }
 
@@ -124,7 +96,6 @@ input:focus {
 	color: #888;
 	display: block;
 	float: left;
-	font-family: 'Cabin', helvetica, arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	height: 40px;
@@ -343,4 +314,59 @@ input:focus {
 	cursor: pointer;
 	border-radius: 3px;
 	text-align: center;
+}
+
+/* search bar */
+#searchbar {
+	margin-bottom: auto;
+	margin-top: auto;
+	width: 350px;
+	height: 40px;
+	background-color: #111;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 13px;
+	z-index: 0;
+}
+
+#search_input {
+	color: #f2f2f2;
+	border: 0;
+	outline: 0;
+	background: none;
+	width: 320px;
+	caret-color: transparent;
+	transition: width 0.4s linear;
+	padding: 0 10px;
+
+}
+
+#searchbar:hover>#search_input {
+	color: #f2f2f2;
+	padding-right: 0 15px;
+	transition: width 0.4s linear;
+}
+
+#searchbar:hover>.search_icon {
+	background: #777;
+	color: #f2f2f2;
+}
+
+.search_icon {
+	z-index: 5;
+	height: 30px;
+	width: 30px;
+	margin-top: -25px;
+	float: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50% ;
+	color: #f2f2f2;
+}
+
+::placeholder {
+	color: #f2f2f2;
+	opacity: 1;
+	/* Firefox */
 }
