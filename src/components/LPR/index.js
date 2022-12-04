@@ -17,7 +17,7 @@ export const LPRManagment = () => {
         <div className="lpr-right" style={{ display: 'block', float: 'right', marginRight: '100px' }}>
           <div className="lpr-tab_style_one">
             <div className="lpr-tab_wrapper">
-              <input type="radio" name="lpr-eliteplaytabs" id="lpr-style_one_tab_nav_1" checked />
+              <input type="radio" name="lpr-eliteplaytabs" id="lpr-style_one_tab_nav_1" defaultChecked="checked" />
               <label for="lpr-style_one_tab_nav_1">Statistic</label>
               <input type="radio" name="lpr-eliteplaytabs" id="lpr-style_one_tab_nav_2" />
               <label for="lpr-style_one_tab_nav_2"> Graph</label>

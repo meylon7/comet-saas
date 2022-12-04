@@ -5,7 +5,7 @@ import Counter from '../../../../assets/images/counter.svg'
 import Mail from '../../../../assets/images/Mail.svg'
 import Messenger from '../../../../assets/images/Messenger.svg'
 import VideoLink from '../../../../assets/images/VideoLink.svg'
-import AnalyticPic from '../../../../assets/images/body.svg'
+import AnalyticPic from '../../../../assets/images/sensor.png'
 import Suspect from '../../../../assets/images/analytic.svg'
 import './style.css'
 export const Analytic = (props) => {
@@ -71,7 +71,7 @@ export const Analytic = (props) => {
     `
     return (
         <>
-            <img alt="pin" src={AnalyticPic} style={{ position: 'relative', top: '118px', right: "30px", zIndex: "11", width: "50px" }} />
+            <img alt="pin" src={AnalyticPic} style={{ position: 'relative', top: '110px', right: "30px", zIndex: "11", width: "40px" }} />
             <Ticket>
                 <Wrapper>
                     <Left>

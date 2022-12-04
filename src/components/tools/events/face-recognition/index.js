@@ -5,7 +5,7 @@ import Counter from '../../../../assets/images/counter.svg'
 import Mail from '../../../../assets/images/Mail.svg'
 import Messenger from '../../../../assets/images/Messenger.svg'
 import VideoLink from '../../../../assets/images/VideoLink.svg'
-import FaceRecognitionPic from '../../../../assets/images/face-rec.svg'
+import FaceRecognitionPic from '../../../../assets/images/face-detection.png'
 import Suspect from '../../../../assets/images/suspect.svg'
 import './style.css'
 export const FaceRecognition = (props) => {
@@ -71,7 +71,7 @@ export const FaceRecognition = (props) => {
 
     return (
         <>
-            <img alt="pin" src={FaceRecognitionPic} style={{ position: 'relative', top: '118px', right: "30px", zIndex: "11", width: "50px" }} />
+            <img alt="pin" src={FaceRecognitionPic} style={{ position: 'relative', top: '108px', right: "30px", zIndex: "11", height: "35px" }} />
             <Ticket>
                 <Wrapper>
                     <Left>

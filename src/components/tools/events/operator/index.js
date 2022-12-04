@@ -6,7 +6,7 @@ import Counter from '../../../../assets/images/counter.svg'
 import Mail from '../../../../assets/images/Mail.svg'
 import Messenger from '../../../../assets/images/Messenger.svg'
 import VideoLink from '../../../../assets/images/VideoLink.svg'
-import OperatorPic from '../../../../assets/images/operator.svg'
+import OperatorPic from '../../../../assets/images/operator.png'
 import Car from '../../../../assets/images/Car.svg'
 import Man from '../../../../assets/images/man.svg'
 import './style.css'
@@ -14,7 +14,7 @@ export const Operator = (props) => {
     const { caseof, subcase, date, time, description, color, group, agent, classified, selected } = props;
     let selectColor = ''
     if (selected === "true") {
-        selectColor = `box-shadow: 0px 22px 21px -6px rgba(255,255,255,0.3);`
+        selectColor = `1px solid #f2f2f2;`
     }
     const Ticket = styled.div`
             width: 330px;
@@ -22,7 +22,6 @@ export const Operator = (props) => {
             position: relative;
             transition: all 300ms cubic- bezier(0.03, 0.98, 0.53, 0.99) 0s;
             background: ${color};
-            ${selectColor}
             border-radius: 15px;
             padding: 4px;
             z - index: 0;
@@ -74,11 +73,11 @@ export const Operator = (props) => {
 
     return (
         <>
-            <img alt="pin" src={OperatorPic} style={{ position: 'relative', top: '118px', right: "30px", zIndex: "11", width: "50px" }} />
+            <img alt="pin" src={OperatorPic} style={{ position: 'relative', top: '110px', right: "30px", zIndex: "11", width: "40px" }} />
             <Ticket>
                 <Wrapper>
                     <Left>
-                        <div className="operator" style={{ color: selectColor }}>
+                        <div className="operator" >
                             <div className="head">
                                 <section style={{ display: "flex", width: "100%" }}>
                                     <div style={{ width: "65%" }}>

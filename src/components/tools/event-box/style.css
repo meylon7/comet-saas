@@ -1,0 +1,114 @@
+.caseof {
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+    line-height: 8px;
+}
+
+.subcase {
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.group-agent {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    line-height: 8px;
+    padding-top: 10px;
+}
+
+.description {
+    font-size: 11px;
+    margin-top: 1.3em;
+}
+
+.right-section {
+    margin-top: 1em;
+    padding-left: 5px;
+    height: 6.2em;
+}
+
+.pin-icon {
+    float: right;
+}
+
+.info-body {
+    margin-top: 1em;
+}
+
+.event-pic {
+    position: relative;
+    left: 16px;
+    width: 40px;
+}
+
+.small-pic {
+    cursor: pointer;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    background: #e09f3e;
+    border: 2px solid #e09f3e;
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 19px !important;
+    font: 13px Arial, sans-serif;
+}
+
+.clock {
+    font-size: 10px;
+}
+
+.time {
+    padding-left: 17px;
+    font-size: 10px;
+}
+
+.fa-icon {
+    font-size: 12px;
+}
+
+.operator-icons {
+    display: flex;
+    position: absolute;
+    top: 10em;
+    left: 12.5em;
+}
+
+.copy {
+    font-size: 12px;
+    position: relative;
+    left: 53px;
+    top: 29px;
+    z-index: 10;
+}
+
+.glowing-circle {
+    top: 10.2em;
+    left: 0px;
+    content: "selected";
+    position: absolute;
+    color: green;
+    
+}
+.thick-check-mark {
+    width: 19px;
+    height: 33px;
+    border: 10px solid green;
+    border-left: 0;
+    border-top: 0;
+  
+    transform: rotate(45deg);
+  }
+/* @-webkit-keyframes glowing {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #0ff, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  } */

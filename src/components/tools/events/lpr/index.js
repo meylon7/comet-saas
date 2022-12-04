@@ -5,7 +5,7 @@ import Counter from '../../../../assets/images/counter.svg'
 import Mail from '../../../../assets/images/Mail.svg'
 import Messenger from '../../../../assets/images/Messenger.svg'
 import VideoLink from '../../../../assets/images/VideoLink.svg'
-import LPRPic from '../../../../assets/images/event-type.svg'
+import LPRPic from '../../../../assets/images/licence-plate.png'
 import LprCar from '../../../../assets/images/event-car.svg'
 import './style.css'
 export const LPR = (props) => {
@@ -72,7 +72,7 @@ export const LPR = (props) => {
 
     return (
         <>
-            <img alt="pin" src={LPRPic} style={{ position: 'relative', top: '118px', right: "30px", zIndex: "11", width: "50px" }} />
+            <img alt="pin" src={LPRPic} style={{ position: 'relative', top: '113px', right: "30px", zIndex: "11", width: "40px" }} />
             <Ticket>
                 <Wrapper>
                     <Left>

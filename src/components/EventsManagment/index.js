@@ -21,36 +21,36 @@ export const EventsManagment = () => {
         <div className="left-bottom">
           <div className="tab-layout">
             {/* pinned Events */}
-            <input name="nav" type="radio" className="nav home-radio" id="Pinned" checked="checked" />
+            <input name="nav" type="radio" className="nav home-radio" id="Pinned" defaultChecked="checked" />
             <div className="page home-page">
               <div className="page-contents">
                 <div className="event-grid">
                   <div className="event-box">
-                    <Operator caseof="Moshe Eylon" date="Feb 18,2022" time="12:45:33" selected="true" subcase="Just small header" classified="unclassified" color="red" group="2000" agent="Meteor front office" description="Standing infront of the house and looking into the garden for 10 min, wearing blue shirt, jeans and dark glasses. ... " />
+                    <Operator color="#650D0B" caseof="Moshe Eylon" date="Feb 18,2022" time="12:45:33" selected="true" subcase="Just small header" classified="unclassified" group="2000" agent="Meteor front office" description="Standing infront of the house and looking into the garden for 10 min, wearing #384869 shirt, jeans and dark glasses. ... " />
                   </div>
                   <div className="event-box">
-                    <Analytic color="blue" date="Feb 18, 2022" time="12:45:33" caseof="Intrusion" group="1000" agent="Office meteor" classified="Unclassified" count="6" camera="east camera" />
+                    <Analytic color="#7C99B5" date="Feb 18, 2022" time="12:45:33" caseof="Intrusion" group="1000" agent="Office meteor" classified="Unclassified" count="6" camera="east camera" />
                   </div>
                   <div className="event-box">
-                    <LPR color="orange" caseof="25-685-65" subcase="Part of whitelist" date="Feb 18, 2022" time="12:45:33" relation="delivery man" seen="3" alert="Feb 18, 2022 @ 12:45:33" group="3000" agent="Meteor front office" />
+                    <LPR color="#EFC862" caseof="25-685-65" subcase="Part of whitelist" date="Feb 18, 2022" time="12:45:33" relation="delivery man" seen="3" alert="Feb 18, 2022 @ 12:45:33" group="3000" agent="Meteor front office" />
                   </div>
                   <div className="event-box">
-                    <FaceRecognition color="blue" nameof="Dina. G" date="Feb 18, 2022" time="12:45:33" caseof="Site Crossing" subcase="Part of whitelist" gender="Female" age="23" confidence="65%" score="5" group="3000" agent="Meteor front office" />
+                    <FaceRecognition color="#7C99B5" nameof="Dina. G" date="Feb 18, 2022" time="12:45:33" caseof="Site Crossing" subcase="Part of whitelist" gender="Female" age="23" confidence="65%" score="5" group="3000" agent="Meteor front office" />
                   </div>
                   <div className="event-box">
-                    <Analytic color="blue" date="Feb 18, 2022" time="12:45:33" caseof="Intrusion" group="1000" agent="Office meteor" classified="Unclassified" count="6" camera="east camera" />
+                    <Analytic color="#7C99B5" date="Feb 18, 2022" time="12:45:33" caseof="Intrusion" group="1000" agent="Office meteor" classified="Unclassified" count="6" camera="east camera" />
                   </div>
                   <div className="event-box">
-                    <FaceRecognition color="orange" nameof="Dina. G" date="Feb 18, 2022" time="12:45:33" caseof="Site Crossing" subcase="Part of whitelist" gender="Female" age="23" confidence="65%" score="5" group="3000" agent="Meteor front office" />
+                    <FaceRecognition color="#EFC862" nameof="Dina. G" date="Feb 18, 2022" time="12:45:33" caseof="Site Crossing" subcase="Part of whitelist" gender="Female" age="23" confidence="65%" score="5" group="3000" agent="Meteor front office" />
                   </div>
                   <div className="event-box">
-                    <Analytic color="red" date="Feb 18, 2022" time="12:45:33" caseof="Intrusion" group="1000" agent="Office meteor" classified="Unclassified" count="6" camera="east camera" />
+                    <Analytic color="#650D0B" date="Feb 18, 2022" time="12:45:33" caseof="Intrusion" group="1000" agent="Office meteor" classified="Unclassified" count="6" camera="east camera" />
                   </div>
                   <div className="event-box">
-                    <LPR color="orange" caseof="25-685-65" subcase="Part of whitelist" date="Feb 18, 2022" time="12:45:33" relation="delivery man" seen="3" alert="Feb 18, 2022 @ 12:45:33" group="3000" agent="Meteor front office" />
+                    <LPR color="#EFC862" caseof="25-685-65" subcase="Part of whitelist" date="Feb 18, 2022" time="12:45:33" relation="delivery man" seen="3" alert="Feb 18, 2022 @ 12:45:33" group="3000" agent="Meteor front office" />
                   </div>
                   <div className="event-box">
-                    <Operator caseof="Moshe Eylon" date="Feb 18,2022" time="12:45:33" subcase="Just small header" classified="unclassified" color="red" group="2000" agent="Meteor front office" description="Standing infront of the house and looking into the garden for 10 min, wearing blue shirt, jeans and dark glasses. ... " />
+                    <Operator caseof="Moshe Eylon" date="Feb 18,2022" time="12:45:33" subcase="Just small header" classified="unclassified" color="#650D0B" group="2000" agent="Meteor front office" description="Standing infront of the house and looking into the garden for 10 min, wearing #384869 shirt, jeans and dark glasses. ... " />
                   </div>
                   <div style={{width:'98%',float:'right', marginTop:'-35px'}}><Pagination /></div>
                 </div>

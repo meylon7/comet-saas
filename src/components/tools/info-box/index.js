@@ -8,9 +8,9 @@ export const InfoBox = (props) => {
         borderColor = `stats-container ${color}`
     }
     return (
-        <div class={borderColor}>
+        <div className={borderColor}>
             <img src={Pie} alt="" id='icon' />
-            <div class="counter" data-ceil={data}>{data}</div>
+            <div className="counter" data-ceil={data}>{data}</div>
             <h4>{alert}</h4>
         </div>
     )

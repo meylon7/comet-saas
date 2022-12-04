@@ -54,7 +54,7 @@ export const AddEvent = () => {
                 <div>
                     <div className="btn-container">
                         <label className="switch btn-color-mode-switch">
-                            <input type="checkbox" name="color_mode" id="color_mode" value="1" />
+                            <input type="checkbox" name="color_mode" id="color_mode" value="1" onChange={()=> ''} />
                             <label htmlFor="color_mode" data-on="Pinned" data-off="UnPinned" className="btn-color-mode-switch-inner"></label>
                         </label>
                     </div>
