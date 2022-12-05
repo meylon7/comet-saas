@@ -23,10 +23,9 @@ export const EventBox = (props) => {
     let showAnalytic = 'none'
     let showFace = 'none'
     let showLpr = 'none'
-    let boxShadow = ''
+    let selectedBox = ''
     if (selected === "true") {
-        //cssClass = "thick-check-mark"
-        boxShadow = "box-shadow: 0px 5px 10px 0px rgba(0,255,255,0.7)"
+        selectedBox = "border: solid 2px #f2f2f2;"
     }
     if (color === 'orange') eventColor = '#ca6702'
     if (color === 'red') eventColor = '#bc4749'
@@ -48,7 +47,7 @@ export const EventBox = (props) => {
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
         width: 16em;
-        ${boxShadow}
+        ${selectedBox}
     `
     const CardRight = styled.div`
         background: linear-gradient(to bottom,  ${eventColor} 0%,  ${eventColor} 26%, #313132 26%, #313132 100%);
@@ -61,6 +60,7 @@ export const EventBox = (props) => {
         border-left: .18em dashed #fff;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
+        ${selectedBox}
         &:before,
         &:after {
             content: "";
